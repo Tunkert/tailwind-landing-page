@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Welcome to Tim Web Design!">
+	<title>HOME | Tim Web Design</title>
+	<link rel="stylesheet" href="tailwind.css" media="all">
+	<!-- colors -->
+	<!-- #6c63ff - light blue lb-->
+	<!-- #ff6584 - light red lr-->
+	<!-- #514e64 - dark grey dg-->
+	<!-- #f2f2f2 - light background lbg-->
+<style>
+	.bg-lb {
+		background-color: #6c63ff;
+	}
+	.bg-lr {
+		background-color: #ff6584;
+	}
+	.bg-dg {
+		background-color: #514e64;
+	}
+	.bg-lbg {
+		background-color: #f2f2f2;
+	}
+	.lb {
+		color: #6c63ff;
+	}
+	.lr {
+		color: #ff6584;
+	}
+	.dg {
+		color: #514e64;
+	}
+	.lbg {
+		color: #f2f2f2;
+	}	
+</style>
+
+</head>
+<body class="bg-lbg">
+	
+	<!-- navbar -->
+	<div class="bg-dg fixed w-full">
+		<div class="max-w-screen-xl py-8 px-8 bg-dg mx-auto flex sm:flex sm:justify-between sm:max-h-20">
+			<div id="logo" class="hidden sm:block">
+				<img class="h-12 w-12 inline-block -mt-4" src="images/unicorn.svg" alt="Tim's Web Design" title="Tim's Web Design Co.">&nbsp;&nbsp;
+				<span class="lbg text-2xl px-2 inline-block -mt-4">Tim Web</span>
+			</div>
+			<ul>
+				<li id="menu" class="cursor-pointer lbg text-xl inline-block sm:hidden" onclick="toggleMenu()">Menu</li>
+				<li class="py-4 lbg sm:inline-block px-2 sm:block hidden sm:py-0">Home</li>
+				<li class="py-4 lbg sm:inline-block px-2 sm:block hidden sm:py-0">About</li>
+				<li class="py-4 lbg sm:inline-block px-2 sm:block hidden sm:py-0">Contact</li>
+				<li class="py-4 lbg sm:inline-block px-2 content-end sm:block hidden sm:py-0">Blog</li>
+			</ul>
+		</div>
+	</div>
+	<!-- end navbar -->
+
+	<!-- start hero section -->
+	<div id="hero" class="bg-lb pt-40 sm:pt-28">
+		<div class="container max-w-screen-xl mx-auto px-8 py-12 sm:flex sm:justify-between">
+			<!-- left hero -->
+			<div id="left-hero" class="w-full sm:w-3/5">
+				<h1 class="lbg text-4xl uppercase">Web Design</h1>
+				<p class="lbg text-3xl py-2 uppercase">Defined.</p>
+				<p class="lbg text-2xl py-2 uppercase">Build Your Inner Unicorn.</p>
+				<p class="lbg text-xl py-2 uppercase">HTML.</p>
+				<p class="lbg text-xl py-2 uppercase">CSS.</p>
+				<ul>
+					<li class="pl-4 italic lbg text-lg">Bootstrap</li>
+					<li class="pl-4 italic lbg text-lg">Tailwind</li>
+					<li class="pl-4 italic lbg text-lg">Bulma</li>
+					<li class="pl-4 italic lbg text-lg">Foundation</li>
+					<li class="pl-4 italic lbg text-lg">Materialize</li>
+				</ul>
+				<p class="lbg text-xl py-2 uppercase">Javascript.</p>
+				<ul>
+					<li class="pl-4 italic lbg text-lg">React</li>
+					<li class="pl-4 italic lbg text-lg">Angular</li>
+					<li class="pl-4 italic lbg text-lg">Vue</li>
+					<li class="pl-4 italic lbg text-lg">Svelte</li>
+					<li class="pl-4 italic lbg text-lg">Typescript</li>
+				</ul>
+			</div>
+			<!-- end left hero -->
+
+			<!-- right hero -->
+			<div id="right-hero" class="w-full sm:w-2/5 pt-5 sm:pt-0">
+				<img src="images/unicorn.svg" alt="build your inner unicorn" class="w-full h-full">
+			</div>
+		</div>
+	</div>
+	<!-- end hero -->
+
+	<!-- begin info section 1 -->
+	<div id="info-section-1" class="bg-dg">
+		<div class="container mx-auto max-w-screen-xl px-8 py-12 sm:flex sm:justify-in-between">
+			<div id="left-info-section" class="w-full sm:w-2/5">
+				<h3 class="lbg text-3xl py-2">
+					Simple yet Sophisticated.
+				</h3>
+				<p class="lbg text-2xl py-2">
+					Why build something complicated when it can be just as elegant with a simple structure?
+				</p>
+				<p class="lbg text-lg py-2">
+					Sometimes just HTML5 and CSS3 will do the trick. Don't pay for what you don't need.
+				</p>
+			</div>
+			<div id="right-info-section-1" class="w-full sm:w-3/5 pt-5 sm:pt-0">
+				<img src="./images/static-website.svg" alt="html and css" class="w-full h-full px-8">
+			</div>
+		</div>
+	</div>
+	<!-- end info section 1 -->
+
+	<!-- begin info section 2 -->
+	<div id="info-section-2" class="bg-lbg">
+		<div class="container mx-auto max-w-screen-xl px-8 py-12 sm:flex sm:justify-in-between">
+			<div id="left-info-section-2" class="w-full sm:w-3/5">
+				<img src="./images/wordpress.svg" alt="WordPress" class="w-full h-full px-8">
+			</div>
+			<div id="right-info-section-2" class="w-full sm:w-2/5 sm:mt-12">
+				<h3 class="dg text-3xl py-2">
+					We can be complex.
+				</h3>
+				<p class="dg text-2xl py-2">
+					Sometimes you need something a bit more complex.
+				</p>
+				<p class="dg text-lg py-2">
+					Whether it be customized WordPress or another php project, node.js, React, Angular, Vue, Svelte, whatever you need we have you covered.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- end info section 2 -->
+
+	<!-- begin contact section -->
+	<div id="contact" class="bg-dg">
+		<div class="container mx-auto max-w-screen-xl px-8 py-12">
+			<form action="" method="post" class="container mx-auto sm:w-1/2 bg-lbg px-4 py-4 pb-12 rounded flex justify-center flex-col">
+				<h3 class="mx-auto px-4 py-4 text-3xl dg text-center">Contact Us</h3>
+				<label for="fullname" class="text-xl text-center dg py-2">Enter Full Name: </label>
+				<input type="text" id="fullname" name="fullname" class="p-2 dg w-full sm:w-1/2 mx-auto" style="5px; outline: 1px solid rgba(0, 0, 0, 0.5);" required>				
+				<label for="email" class="text-xl text-center dg py-2 pt-4">Email: </label>
+				<input type="email" id="fullname" name="fullname" class="p-2 dg w-full sm:w-1/2 mx-auto" style="5px; outline: 1px solid rgba(0, 0, 0, 0.5);" required>
+				<label for="message" class="text-xl text-center dg py-2 pt-4">Message (optional): </label>
+				<textarea id="message" name="message" class="w-full sm:w-3/4 h-40 mx-auto" style="5px; outline: 1px solid rgba(0, 0, 0, 0.5);"></textarea>
+				<button class="bg-lb px-8 py-4 rounded mt-4 sm:w-1/4 mx-auto lbg uppercase text-lg hover:bg-blue-600" type="submit">Submit</button>
+			</form>
+		</div>
+		<!-- end contact section -->
+
+		<!-- begin footer section -->
+		<div id="footer" class="bg-lb">
+			<div class="container mx-auto max-w-screen-xl px-8 py-12">
+				<p class="lbg text-sm text-center">
+					Copyright &copy; 2021 Tim Web Design. All rights reserved.
+				</p>
+			</div>
+		</div>
+		<!-- end footer section -->
+			  	
+	<script src="script.js"></script>
+</body>
+</html>
